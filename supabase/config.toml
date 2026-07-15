@@ -1,0 +1,4 @@
+project_id = "BCD"
+
+[functions.gemini-answer]
+verify_jwt = true

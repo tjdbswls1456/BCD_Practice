@@ -136,7 +136,7 @@ export default function WheelchairChargerMap() {
       </aside>
 
       <section className="charger-map-wrap">
-        <MapContainer center={[36.35, 127.85]} zoom={7} scrollWheelZoom className="charger-map">
+        <MapContainer center={[36.35, 127.85]} zoom={7} scrollWheelZoom preferCanvas className="charger-map">
           <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           {filteredGeoJson.features.length > 0 && <GeoJSON
             key={`${selectedRegion}-${filteredGeoJson.features.length}`}
